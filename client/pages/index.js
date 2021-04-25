@@ -1,14 +1,16 @@
 import Link from 'next/link'
-import WithApollo from '../lib/with-apollo'
-import Name from '../components/Name'
+import Name from '../app/components/Name'
 
 const Page = () => (
-  <div>
-    Welcome, <Name />
-    <br/><br/>
-    <Link href="/about"><a>About</a></Link>
+    <div>
+        Welcome, <Name />
+        <br/><br/>
+        <Link href="/about"><a>About</a></Link>
+            <br />
+            <Link href="/users"><a>Users</a></Link>
+            <br />
+            <Link href="/users-paginated"><a>Users with GraphQL pagination</a></Link>
+    </div>
+);
 
-  </div>
-)
-
-export default WithApollo(Page)
+export default Page;

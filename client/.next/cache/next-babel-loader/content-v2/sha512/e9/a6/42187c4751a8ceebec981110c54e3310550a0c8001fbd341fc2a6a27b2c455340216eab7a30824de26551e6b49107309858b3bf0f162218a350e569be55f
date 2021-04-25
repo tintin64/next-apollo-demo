@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var LOAD_SIZE = 20;","map":{"version":3,"sources":["/Users/sandeeppasunuri/workspace/next-apollo-demo/client/constants/index.ts"],"names":["LOAD_SIZE"],"mappings":"AAAA,OAAO,IAAMA,SAAS,GAAG,EAAlB","sourcesContent":["export const LOAD_SIZE = 20;"]},"metadata":{},"sourceType":"module"}

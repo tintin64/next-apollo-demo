@@ -1,17 +1,15 @@
 const express = require('express')
-const bodyParser = require('body-parser')
 const cors = require('cors')
-const { graphqlExpress, graphiqlExpress } = require('apollo-server-express')
-const myGraphQLSchema = require('./schema')
+const startApolloServer = require('./apollo-server');
 
 const app = express();
 
+startApolloServer(app);
+
 // to access graphql API from the client side
-app.use(cors())
-// bodyParser is needed just for POST.
-app.use('/graphql', bodyParser.json(), graphqlExpress({ schema: myGraphQLSchema }));
-// for the graphiql interface
-app.get('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
+app.use(cors({
+
+}))
 
 const port = process.env.PORT || 5000
 app.listen(port, (err) => {

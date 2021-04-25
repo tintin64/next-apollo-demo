@@ -1,4 +1,4 @@
-import { withData } from 'next-apollo'
+import { withApollo } from 'next-apollo'
 import { HttpLink } from 'apollo-link-http'
 
 const apolloConfig = {
@@ -7,4 +7,4 @@ const apolloConfig = {
   })
 }
 
-export default withData(apolloConfig)
+export default withApollo(apolloConfig)
