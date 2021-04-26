@@ -56,6 +56,8 @@
   },
   "scripts": {
     "dev": "next",
+    "start": "next start",
+    "build": "next build",
     "test": "jest"
   },
   "license": "MIT",
